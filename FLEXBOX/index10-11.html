@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="estilo10-11.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        POR PADRAO A PROPRIEDADE
+        <code>justify-content</code>
+        é valor<code>flex-start</code>
+    </p>
+    <select id="escolher" onchange="atualizarJustifyContent(escolher)">
+        <option value="">SELECIONE</option>
+        <option value="center">center</option>
+        <option value="flex-start">flex-start</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+    </select>
+    <div class ="container">
+        <div class="box box1">DIV1</div>
+        <div class="box box2">DIV2</div>
+        <div class="box box3">DIV3</div>
+        <div class="box box4">DIV4</div>
+    </div>
+    <p>
+        POR PADRAO A PROPRIEDADE
+        <code> align-itens</code>
+        é valor<code>stretch</code>
+    </p>
+    <div class="containerItem">
+        <div class="boxItem boxItens1">DIV1</div>
+        <div class="boxItem boxItens2">DIV2</div>
+        <div class="boxItem boxItens3">DIV3</div>
+        <div class="boxItem boxItens4">DIV4</div>
+    </div>
+    <script>
+        var container = document.getElementsByClassName("container")[0];
+        function atualizarJustifyContent(elemento){
+            var valor = elemento.value;
+            cotainer.style.atualizarJustifyContent=valor;
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 10px;
+
+}
+
+.container{
+    display: flex;
+    margin: 0 auto; 
+
+    /* flex-end */
+    /* flex-start */
+    /* space-between*/
+    /* space-around */
+    /* https://flexboxfroggy.com/ */
+}
+.containerItem{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid slateblue;
+    height: 150px;
+}
+code{
+    color: yellow;
+}
+.box{
+    border: 3px dashed lime;
+    padding: 10px;
+    text-align: center;
+
+}
+.box1{
+    background-color: #5e5e5e;
+}
+
+.box2{
+    background-color: yellow;
+}
+.box3{
+    background-color: pink;
+}
+.box4{
+    background-color: red;
+}

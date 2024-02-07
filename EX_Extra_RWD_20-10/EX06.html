@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 06</title>
+</head>
+<body>
+
+    <button onclick="letraMaiuscula()">CLIQUE AQUI PARA INICIAR</button>
+    <h1>EXERCICIO 06 - MAIUSCULA</h1>
+    <script>
+        function letraMaiuscula(){
+            let palavra = prompt("Digite uma palavra: ")
+            let frase = ""
+            let palavras = palavra.split(" ")
+            for(let i=0; i<palavras.length; i++){
+                frase += palavras[i].charAt(0).toUpperCase() + palavras[i].slice(1) + " "
+            }
+            alert(frase)
+        }
+    
+    
+
+
+
+    </script>
+
+</body>
+</html>

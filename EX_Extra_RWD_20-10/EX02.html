@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX02</title>
+    <h1>EXERCICIO 02 CUBO DO NÚMERO</h1>
+
+    <button onclick="cuboNumero()">CLIQUE AQUI PARA COMEÇAR</button>
+
+    <script>
+       
+        function cuboNumero(){
+            let numero = prompt('Digite o valor:')
+
+            let cuboNumero = parseInt(numero) * parseInt(numero) * parseInt(numero) //parseIntConverte os números em inteiros para fazer a soma e não concatena
+
+            alert('O cubo dos número é: ' + cuboNumero)
+        }
+    </script>
+    
+</body>
+</html>

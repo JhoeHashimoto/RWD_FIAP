@@ -1,0 +1,56 @@
+.container{
+    display: flex; /*ativa flexbox*/
+    flex-wrap: nowrap; /*layout responsivo de acordo com o tamanho e redimensionamento da pagina*/
+    flex-direction: row;
+    border: 1px solid red;
+    justify-content: flex-end;/*centraliza o flex item a direita, para a esquerda é start*/
+    padding: 10px;
+}
+.flex-item{
+    display: flex;
+    border: 1px solid;
+    padding: 10px;
+    text-align:center; /*centraliza o conteudo,no caso texto*/
+}
+
+/*NOVO FORMATO*/
+
+.containerEnd{
+    display: flex; /*ativa flexbox*/
+    flex-wrap: wrap; /*layout responsivo*/
+    justify-content: flex-end;
+    /*INICIA A DIREITA*/
+    padding: 10px;
+    border: 1px solid red;
+
+}
+
+.containerColumn{
+    display: flex; /*ativa flexbox*/
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    border: 1px solid red;
+    padding: 10px;
+}
+/*CONFIGURANDO A RESPONSIVIDADE*/
+/*SE A TELA FOR ENTRE 1 A 800*/
+@media (max-width: 800px) {
+    .containerColumn{
+        background-color: blue;
+    }
+}
+.flex-item02{
+    border: 1px solid;
+    padding: 10px;
+    width: 100px;
+
+}
+.container02{
+    display: flex;
+    flex-wrap:wrap;
+    border: 1px solid red;
+    justify-content: center;
+    /*CENTRALIZA OS FLEX ITENS*/
+    padding: 10px;
+}

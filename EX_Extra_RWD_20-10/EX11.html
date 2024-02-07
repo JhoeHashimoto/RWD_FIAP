@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 11</title>
+</head>
+<body>
+    <h1>EXERCICIO 11 - RETORNO DO DIA DA SEMANA A PARTIR DA DATA</h1>
+    <button onclick="dataformat()">CLIQUE AQUI PARA INICIAR</button>
+    <script>
+        function dataformat(){
+           var data = new Date(prompt('Digite uma data:'))
+           var diasSemana = ['Segunda','Terça','Quarta','Quinta','Sexta','Sabado','Domingo'];
+        
+            alert(diasSemana[data.getDay()])
+        }
+    </script>
+</body>
+</html>
